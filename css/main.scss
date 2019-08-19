@@ -13,6 +13,10 @@ h1 {
     color: white;
 }
 
+.title-container {
+    margin-top: 350px;
+}
+
 .font-bolder {
     font-weight: 900;
     color: #FF7A3B;
@@ -32,6 +36,7 @@ h1 {
 
 .card-columns {
     column-count: 2;
+    padding: 75px;
 }
 
 .card-columns .card {
@@ -46,14 +51,16 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    height: 100vh;
+    height: 40vh;
+    margin-bottom: 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .jumbotron-post {
     color: black;
     // background-image: url("/images/il_794xN.1098056634_26yg.jpg");
-    background:rgba(255,122,59,0.9);
+    background: #FFB13B;
+    background: linear-gradient(0deg,rgba(204,133,27,0.4),rgba(255,177,59,0.9));
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -90,10 +97,6 @@ h1 {
 .card-img-post {
     object-fit: cover;
     max-height: none;
-}
-
-.card-container {
-    margin-top: 200px;
 }
 
 .tall-card {

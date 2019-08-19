@@ -2,14 +2,15 @@
 layout: default
 ---
 
-<div class="jumbotron">
-  <div class="container-fluid mt-5 pt-1">
-    <h1>Welcome <span class="font-bolder">Home</span></h1>
-    <p class="lead">The Homestead Story</p>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container-fluid title-container pr-4">
+    <h1 class="text-right">Welcome <span class="font-bolder">Home</span></h1>
+    <p class=" text-right lead">The Homestead Story</p>
   </div>
+</div>
 
-  <div class="container-fluid card-container">
-    <div class="mt-5 pt-5 card-columns">
+  <div class="container-fluid card-container jumbotron-post">
+    <div class="card-columns">
     {% for post in site.posts %}
       <div class="card">
         {% if post.image-url %}
@@ -24,5 +25,4 @@ layout: default
     {% endfor %}
   </div>
 
-</div>
 </div>
