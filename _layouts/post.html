@@ -2,21 +2,16 @@
 <html lang="en">
   {% include head.html %}
   <body>
-    
-      <div class="jumbotron jumbotron-post jumbotron-fluid">
-        <div class="post">
-          <div class="container-fluid mt-5 pt-1">
-            <h1 class="font-bolder-no-color">{{ page.title }}</h1>
-          </div>
-        
-          <div class="container-fluid card-container mt-5 pt-5">
-            <div class="card tall-card">
-              {% if page.image-url %}
-              <img class="card-img-top card-img-post" src="{{ page.image-url }}" alt="Card image cap">
-              {% endif %}
+      <div class="jumbotron-post jumbotron-fluid" style="background-image: url({{ page.image-url }})">
+        <div class="post vertical-center">
+          <div class="container-fluid">
+            <div class="card post-card-transparent tall-card">
               <div class="card-body">
+                <h2 class="font-bolder page-title">{{ page.title }}</h2>
                 <p>{{ page.excerpt }}</p>
-                <a href="/" class="btn btn-primary stretched-link">Return Home</a>
+              </div>
+              <div class="card-footer">
+                <a href="/" class="btn btn-lg btn-light stretched-link">Return Home</a>
               </div>
             </div>
           </div>
